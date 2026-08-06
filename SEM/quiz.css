@@ -27,7 +27,7 @@ body {
   min-width: 20rem;
   min-height: 100vh;
   margin: 0;
-  padding: clamp(2rem, 5vw, 4.5rem) 1rem 5rem;
+  padding: clamp(4.5rem, 7vw, 5.5rem) 1rem 5rem;
   background: var(--canvas);
 }
 
@@ -50,6 +50,49 @@ h1 {
   letter-spacing: 0.1em;
   text-align: center;
   text-transform: uppercase;
+}
+
+.exam-switcher {
+  position: fixed;
+  z-index: 20;
+  top: 0.75rem;
+  left: 0.75rem;
+  display: inline-flex;
+  gap: 0.125rem;
+  margin: 0;
+  padding: 0.2rem;
+  border: 1px solid var(--line);
+  border-radius: 0.35rem;
+  background: var(--chrome-light);
+  box-shadow: 0 0.25rem 1rem rgb(60 65 74 / 6%);
+}
+
+.exam-switcher__option {
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.2rem;
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-decoration: none;
+  transition: background 150ms ease, color 150ms ease;
+}
+
+.exam-switcher__option:hover,
+.exam-switcher__option:focus-visible {
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.exam-switcher__option:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.exam-switcher__option.is-active {
+  color: var(--ink);
+  background: var(--paper);
 }
 
 #progressBar {
@@ -248,7 +291,7 @@ h1 {
 
 @media (max-width: 40rem) {
   body {
-    padding: 1.5rem 0.75rem 4rem;
+    padding: 4.25rem 0.75rem 4rem;
   }
 
   h1 {
@@ -271,6 +314,7 @@ h1 {
 
   #progressFill,
   .option,
+  .exam-switcher__option,
   #finishBtn,
   #retryBtn {
     transition: none;

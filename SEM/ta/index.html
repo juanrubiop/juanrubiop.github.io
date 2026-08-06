@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Examen técnico de conocimientos generales para el ingreso a la Rama Técnico-Administrativa del Servicio Exterior Mexicano.">
+  <title>Examen de Ingreso - Rama Técnico-Administrativa</title>
+  <link rel="stylesheet" href="../quiz.css">
+  <script src="quiz.js" defer></script>
+</head>
+<body>
+  <h1>Examen Técnico de Conocimientos Generales — Ingreso a la Rama Técnico-Administrativa del Servicio Exterior Mexicano</h1>
+  <div class="sub">110 preguntas · Selecciona una respuesta por pregunta</div>
+
+  <nav class="exam-switcher" aria-label="Seleccionar examen">
+    <a class="exam-switcher__option" href="/SEM/dc/" aria-label="Examen Diplomático-Consular" title="Diplomático-Consular">Diplomático</a>
+    <a class="exam-switcher__option is-active" href="/SEM/ta/" aria-label="Examen Técnico-Administrativo" aria-current="page" title="Técnico-Administrativa">Técnico</a>
+  </nav>
+
+  <div id="progressBar">
+    <div id="progressTrack"><div id="progressFill"></div></div>
+    <div id="progressText">0 / 110 respondidas</div>
+  </div>
+
+  <div class="container" id="quizContainer"></div>
+
+  <button id="finishBtn">Ver resultado final</button>
+
+  <div id="resultBox">
+    <h2>Resultado</h2>
+    <div id="scoreBig"></div>
+    <p id="scoreDetail"></p>
+    <button id="retryBtn">Reintentar examen</button>
+  </div>
+</body>
+</html>
