@@ -1,0 +1,363 @@
+:root {
+  --alx-paper: #fbfaf6;
+  --alx-ink: #282d29;
+  --alx-muted: #59635d;
+  --alx-accent: #385b48;
+  --alx-line: #d4d8ce;
+}
+
+body.alexandria {
+  color: var(--alx-ink);
+  background: var(--alx-paper);
+  line-height: 1.65;
+}
+
+.alexandria a:focus-visible {
+  outline: 2px solid var(--alx-accent);
+  outline-offset: 5px;
+}
+
+.alx-wrap {
+  width: min(100% - 3rem, 72rem);
+  margin-inline: auto;
+}
+
+.alx-header {
+  border-bottom: 1px solid var(--alx-line);
+}
+
+.alx-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  min-height: 5.5rem;
+}
+
+.alx-brand {
+  font: 1.6rem Georgia, serif;
+  letter-spacing: -0.04em;
+}
+
+.alx-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.alx-nav-links a:hover,
+.alx-nav-links [aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 0.4em;
+}
+
+.alx-skip {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  z-index: 20;
+  padding: 0.7rem 1rem;
+  transform: translateY(-120%);
+  background: var(--alx-ink);
+  color: white;
+}
+
+.alx-skip:focus {
+  transform: translateY(0);
+}
+
+.alx-hero {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  align-items: center;
+  gap: 5rem;
+  padding-block: clamp(3.5rem, 8vw, 7rem);
+}
+
+.alx-eyebrow {
+  margin: 0 0 1.5rem;
+  color: var(--alx-accent);
+  font-size: 0.72rem;
+  font-weight: 650;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.alexandria h1,
+.alexandria h2,
+.alexandria h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.alx-hero h1 {
+  margin: 0 0 1.5rem;
+  font-size: clamp(2.9rem, 5.8vw, 5.25rem);
+  letter-spacing: -0.055em;
+}
+
+.alx-lead {
+  max-width: 36rem;
+  color: var(--alx-muted);
+  font-size: 1.15rem;
+  line-height: 1.75;
+}
+
+.alx-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.5rem;
+  margin-top: 2rem;
+}
+
+.alx-button {
+  display: inline-block;
+  padding: 0.8rem 1.25rem;
+  border: 1px solid var(--alx-accent);
+  border-radius: 3px;
+  background: var(--alx-accent);
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.alx-button:hover {
+  background: #294736;
+}
+
+.alx-link,
+.alx-prose a,
+.alx-footer a,
+.alx-contact a {
+  color: var(--alx-accent);
+  text-decoration: underline;
+  text-underline-offset: 0.22em;
+}
+
+.alx-note {
+  color: var(--alx-muted);
+  font-size: 0.875rem;
+}
+
+.alx-folio {
+  margin: 0;
+  padding: 2rem;
+  border: 1px solid var(--alx-line);
+  background: #eff1e9;
+}
+
+.alx-folio .alx-eyebrow {
+  margin-bottom: 2rem;
+}
+
+.alx-paper {
+  position: relative;
+  padding: 1.5rem;
+  border: 1px solid #c9cfc0;
+  background: var(--alx-paper);
+  box-shadow: 7px 7px 0 #e1e5d9, 8px 8px 0 #c9cfc0;
+}
+
+.alx-paper h2 {
+  margin: 0.25rem 0 1.5rem;
+  font-size: 1.85rem;
+}
+
+.alx-paper p {
+  margin: 1rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--alx-line);
+  font-size: 0.875rem;
+}
+
+.alx-highlight {
+  padding: 0.05em 0.15em;
+  background: #e9dc98;
+}
+
+.alx-folio figcaption {
+  margin-top: 2rem;
+  color: var(--alx-muted);
+  font-size: 0.8rem;
+}
+
+.alx-section {
+  padding-block: 3.5rem;
+  border-top: 1px solid var(--alx-line);
+  scroll-margin-top: 2rem;
+}
+
+.alx-section h2 {
+  margin-top: 0;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  letter-spacing: -0.035em;
+}
+
+.alx-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.alx-features h3 {
+  margin-block: 0.75rem;
+  font-size: 1.55rem;
+}
+
+.alx-features p {
+  color: var(--alx-muted);
+}
+
+.alx-number {
+  color: var(--alx-accent);
+  font-size: 0.75rem;
+}
+
+.alx-split {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 5rem;
+}
+
+.alx-split p:first-child {
+  margin-top: 0;
+}
+
+.alx-contact {
+  padding: 2rem;
+  border: 1px solid var(--alx-line);
+  background: #eff1e9;
+}
+
+.alx-contact p:last-child {
+  margin-bottom: 0;
+}
+
+.alx-footer {
+  margin-top: 2rem;
+  padding-block: 2rem;
+  border-top: 1px solid var(--alx-line);
+  color: var(--alx-muted);
+  font-size: 0.8rem;
+}
+
+.alx-footer .alx-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.alx-footer p {
+  margin: 0;
+}
+
+.alx-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.alx-legal {
+  max-width: 49rem;
+  padding-block: 3.5rem;
+}
+
+.alx-legal h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2.75rem, 6vw, 4rem);
+  letter-spacing: -0.04em;
+}
+
+.alx-prose {
+  overflow-wrap: anywhere;
+}
+
+.alx-prose h2 {
+  margin: 2.75rem 0 1rem;
+  font-size: 1.6rem;
+  scroll-margin-top: 1.5rem;
+}
+
+.alx-prose h3 {
+  margin-top: 1.75rem;
+  font-size: 1.2rem;
+}
+
+.alx-prose li + li {
+  margin-top: 0.6rem;
+}
+
+.alx-summary {
+  margin-block: 2rem;
+  padding: 1.25rem 1.5rem;
+  border-left: 3px solid var(--alx-accent);
+  background: #eff1e9;
+}
+
+.alx-summary p {
+  margin-block: 0.5rem;
+}
+
+.alx-toc {
+  padding: 1rem 0;
+  border-block: 1px solid var(--alx-line);
+}
+
+.alx-toc ol {
+  columns: 2;
+  padding-left: 1.25rem;
+}
+
+.alx-toc li {
+  break-inside: avoid;
+  margin: 0.5rem 1rem 0.5rem 0;
+}
+
+.alx-prose code {
+  font-size: 0.875em;
+}
+
+@media (max-width: 48rem) {
+  .alx-wrap {
+    width: min(100% - 2rem, 72rem);
+  }
+
+  .alx-nav {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.75rem;
+    padding-block: 1.25rem;
+  }
+
+  .alx-nav-links {
+    gap: 1.25rem;
+  }
+
+  .alx-hero,
+  .alx-split,
+  .alx-features {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .alx-folio {
+    max-width: 30rem;
+  }
+
+  .alx-section {
+    padding-block: 2.5rem;
+  }
+
+  .alx-features {
+    gap: 1rem;
+  }
+
+  .alx-toc ol {
+    columns: 1;
+  }
+}

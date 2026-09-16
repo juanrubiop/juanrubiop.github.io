@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How Alexandria handles your documents, Google account information, Drive synchronization and optional AI requests.">
+  <meta name="theme-color" content="#fbfaf6">
+  <title>Privacy policy · Alexandria</title>
+  <link rel="canonical" href="https://juanrubiop.github.io/Alexandria/privacy/">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="stylesheet" href="/Alexandria/alexandria.css">
+</head>
+<body class="alexandria">
+  <a class="alx-skip" href="#main">Skip to content</a>
+  <header class="alx-header">
+    <nav class="alx-wrap alx-nav" aria-label="Alexandria navigation">
+      <a class="alx-brand" href="/Alexandria/" aria-label="Alexandria home">Alexandria</a>
+      <div class="alx-nav-links"><a href="/Alexandria/">Overview</a><a href="/Alexandria/privacy/" aria-current="page">Privacy</a><a href="/Alexandria/terms/">Terms</a><a href="/Alexandria/#contact">Contact</a></div>
+    </nav>
+  </header>
+  <main id="main" class="alx-wrap alx-legal alx-prose">
+    <p class="alx-eyebrow">Alexandria · Privacy</p>
+    <h1>Privacy policy</h1>
+    <p class="alx-note">Effective and last updated: September 16, 2026</p>
+    <p>This policy describes the Alexandria Mac and iPad beta apps and this website. Alexandria is developed and operated by Juan Pablo Rubio Perez, with contact address at Paseo de los Geranios 5481, Monterrey, Mexico. For privacy questions or requests, contact <a href="mailto:juanprp20@gmail.com">juanprp20@gmail.com</a>.</p>
+    <div class="alx-summary"><p><strong>The essentials.</strong> Your library is stored on your devices. If you enable sync, Alexandria sends a copy to its hidden folder in your Google Drive. Optional AI chat sends document context to OpenRouter and its model providers when you submit a request.</p><p>The developer does not operate a server that receives your synced library. Contacting support or using a third-party feature can disclose information as explained below.</p></div>
+    <nav class="alx-toc" aria-label="Privacy policy contents"><ol>
+      <li><a href="#data">Information handled</a></li><li><a href="#google">Google connection</a></li><li><a href="#optional-services">Optional services</a></li><li><a href="#storage">Storage and security</a></li><li><a href="#deletion">Retention and deletion</a></li><li><a href="#rights">Your choices and rights</a></li><li><a href="#website">Website and support</a></li><li><a href="#changes">Policy changes</a></li>
+    </ol></nav>
+
+    <h2 id="data">1. Information Alexandria handles</h2>
+    <ul>
+      <li><strong>Your library:</strong> imported PDFs, document titles and metadata, highlights, drawings, notes, saved regions, tags, folders, favorites and document relationships.</li>
+      <li><strong>Your Google connection:</strong> Google account identifier, name, email, granted permissions and authorization tokens. Google handles authentication; Alexandria does not receive your Google password.</li>
+      <li><strong>Sync records:</strong> document and device identifiers, change timestamps, edits, conflicts and transfer state used to move changes between your devices.</li>
+      <li><strong>Optional AI requests:</strong> questions, conversation context and content from the current document, including text, annotations, notes and images, where that feature is used.</li>
+      <li><strong>Support correspondence:</strong> your email address and information you choose to send to the developer.</li>
+    </ul>
+    <p>These data support reading and organizing your documents, connecting the correct account, synchronizing your library, answering AI requests you initiate and responding to support enquiries. Alexandria does not include advertising, data-broker integrations or app usage analytics.</p>
+    <p>PDFs and notes may contain personal or sensitive information. You control what you import and which optional services you use; importing a document does not make it public.</p>
+
+    <h2 id="google">2. Google Sign-In and Drive</h2>
+    <p>Google sign-in is optional. Account identity permissions let Alexandria identify and display the connected account. The <code>drive.appdata</code> permission allows the app to create, read, update and delete its own application data in your Drive, including synchronized PDFs and library records.</p>
+    <p>This storage is hidden from the normal Drive file list. Alexandria does not request permission to browse unrelated Drive files. Sync traffic goes from your device to Google, without passing through a developer-operated server. Google handles the data under its <a href="https://policies.google.com/privacy">privacy policy</a>.</p>
+    <p>Alexandria’s use of Google data follows the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements. The developer does not sell Google data or use it for advertising.</p>
+
+    <h2 id="optional-services">3. Optional services and sharing</h2>
+    <h3>AI chat on Mac</h3>
+    <p>If you configure your own OpenRouter API key and send a question, the app sends the question and conversation context to OpenRouter and the selected model’s provider. Context can include text from the current PDF, notes, tags, highlights, drawings, saved regions and images of pages or selections. This also applies to documents downloaded through Google sync.</p>
+    <p>Connecting Google or synchronizing a document does not itself send an AI request. To avoid AI processing, do not configure or use AI chat. The API key is used to authenticate requests against your OpenRouter account.</p>
+    <p>Provider processing and retention depend on your account settings, routing and chosen model. See <a href="https://openrouter.ai/privacy">OpenRouter’s privacy policy</a> and the selected provider’s terms before sending content. Alexandria does not itself train AI models and does not impose a universal zero-retention or no-training setting on every provider.</p>
+    <h3>Document imports and external links</h3>
+    <p>Importing from arXiv or a web address contacts the requested service to retrieve metadata or a PDF. The service receives the request and ordinary connection information such as your IP address. Following an external link also takes you to that service under its own policies.</p>
+    <h3>Support</h3>
+    <p>The developer can see information you send directly for support, including any attached files. Do not send private library content unless it is needed and you choose to share it. Information in the developer’s possession may be disclosed when required by law or to address a security incident, subject to applicable restrictions.</p>
+
+    <h2 id="storage">4. Storage, security and international processing</h2>
+    <p>PDFs and the local catalogue are stored in the app’s library on your device. Google sign-in credentials are managed by Google’s native SDK using the platform’s credential storage. Local files also depend on your device security and any backups you make.</p>
+    <p>Google API and OpenRouter requests use HTTPS. Alexandria does not add end-to-end encryption to files before uploading them to Drive. Access controls and encryption provided by your device and service providers are separate from encryption implemented by the app.</p>
+    <p>Google, GitHub, OpenRouter and model providers may process information in countries outside Mexico. Their policies describe their processing locations and safeguards. No storage or transmission method can guarantee absolute security.</p>
+
+    <h2 id="deletion">5. Retention and deletion</h2>
+    <ul>
+      <li><strong>Local library:</strong> documents and notes remain until removed. Independently imported originals, exported files and device backups are separate copies.</li>
+      <li><strong>Sign out:</strong> stops the Google connection in Alexandria but keeps the local library and Drive copy. It is not a deletion request.</li>
+      <li><strong>Remove Download:</strong> removes a downloaded PDF from that device while retaining its library record and cloud copy.</li>
+      <li><strong>Remove This Account’s Local Data:</strong> removes that account’s local replica and signs out on the device. Drive data is preserved. Pending changes, conflicts and recovery items must be resolved first.</li>
+      <li><strong>Trash:</strong> a document is recoverable for 30 days. The next successful active sync after expiry removes its cloud PDF and authored history. Deletion markers remain to prevent an older device from restoring deleted records. Devices receive deletions when they next sync.</li>
+      <li><strong>Offline conflicts:</strong> unsent edits affected by a deletion on another device can remain under <em>Retained local changes</em> for recovery. Signing out does not erase them.</li>
+      <li><strong>Cloud storage:</strong> you can remove Alexandria’s hidden data through Google Drive’s app-management settings. Stop sync on your devices first; reconnecting a retained local library can upload data again. This does not remove local originals or backups.</li>
+    </ul>
+    <p>Remove Alexandria’s authorization through your <a href="https://myaccount.google.com/connections">Google Account connections</a> to revoke access. Revocation alone does not delete copies already stored on devices or in Drive.</p>
+    <p>Support correspondence is retained for resolving the request and necessary follow-up, or for applicable legal obligations. You may request its deletion. Third-party retention, including Google’s internal backups and any content already sent to an AI provider, follows the relevant provider’s policies.</p>
+
+    <h2 id="rights">6. Your choices and privacy rights</h2>
+    <p>You can use a local library without Google, sign out of sync, revoke Google access, remove local copies and avoid optional AI processing. These choices may make the related online feature unavailable.</p>
+    <p>For personal data held by the developer, email <a href="mailto:juanprp20@gmail.com">juanprp20@gmail.com</a> to request access, correction, deletion or cancellation, or to object to processing (ARCO rights in Mexico). You can also request limits on use or disclosure or revoke consent where applicable. Other rights may apply depending on your location.</p>
+    <p>Include your name, a reply address and a description of the data and action requested. The developer may ask for proportionate information to verify your identity and will respond within the applicable legal deadlines. Do not include passwords or API keys. The developer cannot directly inspect or erase a library held only on your device or in your Google account; the controls above let you manage those copies.</p>
+
+    <h2 id="website">7. This website and contacting support</h2>
+    <p>This site is hosted by GitHub Pages. These Alexandria pages do not set cookies or include analytics, advertising trackers, embedded media or remote fonts. GitHub may receive connection data, including IP addresses, when serving the site, as described in the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+    <p>Contact links open your email application. Emails sent to <a href="mailto:juanprp20@gmail.com">juanprp20@gmail.com</a> are processed by your email provider and Gmail and made available to the developer to handle your request. There is no sign-up form or account registration on this website.</p>
+
+    <h2 id="changes">8. Changes and contact</h2>
+    <p>Updates will be published here with a revised date. Material changes to Google-data processing will be disclosed before the new use, with renewed consent where required. For questions about this policy or the handling of your information, contact Juan Pablo Rubio Perez in Mexico at <a href="mailto:juanprp20@gmail.com">juanprp20@gmail.com</a>.</p>
+    <p class="alx-note">Prepared with reference to <a href="https://github.com/General-Legal/legal-templates">General Legal’s CC0 templates</a> and tailored to Alexandria’s beta features.</p>
+  </main>
+  <footer class="alx-footer">
+    <div class="alx-wrap">
+      <p>Alexandria · Made by <a href="/">Juan Pablo Rubio Perez</a> · Mexico</p>
+      <div class="alx-footer-links"><a href="/Alexandria/privacy/">Privacy policy</a><a href="/Alexandria/terms/">Beta terms</a><a href="mailto:juanprp20@gmail.com">Contact</a></div>
+    </div>
+  </footer>
+</body>
+</html>
