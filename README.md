@@ -28,7 +28,7 @@ The privacy text reflects the current beta implementation: direct Google Drive a
 Use an account that is an Owner or Editor of the corresponding Google Cloud project.
 
 1. Open [Search Console](https://search.google.com/search-console/) and add the **URL-prefix** property `https://juanrubiop.github.io/`.
-2. Choose **HTML tag** verification. Add the exact `google-site-verification` meta tag Google supplies inside `<head>` in the repository-root `index.html`, because that is the homepage of the property. No token has been invented or inserted in this repository.
+2. Choose **HTML tag** verification. The owner-supplied `google-site-verification` meta tag is installed inside `<head>` in the repository-root `index.html`, the homepage of this property. Confirm it matches the token shown in your Search Console account. Installing the tag does not itself complete verification.
 3. Alternatively, publish Google's supplied verification HTML file unchanged at the exact URL it specifies, normally at the repository root.
 4. Deploy, confirm the token is visible in the live HTML or file, then click **Verify** in Search Console. Keep the verification token published permanently.
 
